@@ -4,10 +4,18 @@ const port = 3000;
 
 let requestCounter = 0;
 app.get('/', (req, res) => {
-  if (requestCounter++ > 5) {
+  requestCounter++;
+
+  if (requestCounter > 15) {
+    process.exit(1);
+  }
+
+  if (requestCounter > 5) {
     res.status(500).send('Application crashed :(');
+    console.log('Massive exception trace here');
     return;
   }
+
   res.send('Hello World! : ' + Math.random());
 });
 
