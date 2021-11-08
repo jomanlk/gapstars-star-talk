@@ -1,0 +1,22 @@
+{
+  "name": "gapstars-star-talk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jomanlk/gapstars-star-talk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jomanlk/gapstars-star-talk/issues"
+  },
+  "homepage": "https://github.com/jomanlk/gapstars-star-talk#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
